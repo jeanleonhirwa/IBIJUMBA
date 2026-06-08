@@ -32,7 +32,7 @@ function Customers() {
 
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center mb-3">
+      <div className="page-header">
         <h3>Customers</h3>
         <Link to="/customers/new" className="btn btn-primary btn-sm">+ Add Customer</Link>
       </div>

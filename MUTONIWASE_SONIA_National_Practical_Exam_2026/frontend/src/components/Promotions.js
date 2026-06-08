@@ -32,7 +32,7 @@ function Promotions() {
 
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center mb-3">
+      <div className="page-header">
         <h3>Promotions</h3>
         <Link to="/promotions/new" className="btn btn-primary btn-sm">+ Add Promotion</Link>
       </div>

@@ -1,68 +1,182 @@
 body {
-  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.app-container {
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #1b1f3b;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar .nav-link {
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff !important;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  margin-left: 250px;
+  padding: 25px 30px;
   min-height: 100vh;
 }
 
-.main-content {
-  margin-left: 260px;
-  padding: 30px;
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    margin-left: 0;
-    padding: 15px;
-  }
-}
-
+/* ===== Cards ===== */
 .card {
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
 }
 
 .card-header {
-  border-radius: 12px 12px 0 0 !important;
+  border-radius: 10px 10px 0 0 !important;
   font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ===== Tables ===== */
+.table {
+  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 .table th {
   font-weight: 600;
   color: #495057;
+  border-top: none;
+  background-color: #f8f9fa;
+  white-space: nowrap;
 }
 
+.table td {
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f7ff;
+}
+
+/* ===== Buttons ===== */
 .btn-sm {
-  border-radius: 8px;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.82rem;
 }
 
+.btn {
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+/* ===== Forms ===== */
+.form-control, .form-select {
+  border-radius: 6px;
+  font-size: 0.88rem;
+  border: 1px solid #dde1e7;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+  border-color: #86b7fe;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 4px;
+}
+
+/* ===== Search ===== */
 .search-box {
-  max-width: 350px;
+  max-width: 320px;
+  font-size: 0.88rem;
 }
 
+/* ===== Stat Cards ===== */
 .stat-card {
-  padding: 20px;
+  padding: 22px 16px;
   text-align: center;
   transition: transform 0.2s;
+  border-radius: 10px;
 }
 
 .stat-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .stat-card .stat-number {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #0d6efd;
+  line-height: 1.2;
 }
 
 .stat-card .stat-label {
   color: #6c757d;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* ===== Badges ===== */
+.badge {
+  font-weight: 500;
+  font-size: 0.78rem;
+  padding: 4px 10px;
+}
+
+/* ===== Headings ===== */
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1b1f3b;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Print ===== */
+@media print {
+  .sidebar { display: none; }
+  .main-content { margin-left: 0; padding: 20px; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: auto;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
 }

@@ -18,7 +18,7 @@ function Report() {
 
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center mb-3">
+      <div className="page-header">
         <h3>Customer-Promotion Report</h3>
         <button className="btn btn-success btn-sm" onClick={() => window.print()}>Print Report</button>
       </div>

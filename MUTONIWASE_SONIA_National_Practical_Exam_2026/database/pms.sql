@@ -83,8 +83,8 @@ CREATE TABLE Promotion_Vehicle (
 
 -- Insert Users (password: admin123 / staff123 hashed with bcrypt)
 INSERT INTO Users (UserName, Password, Role) VALUES
-('admin', '$2b$10$8K1p/a0dL1LXMIgoEDFrwOfMQkf9Rn6bm1FZwOJK3v0pMl0IRLG2y', 'admin'),
-('staff1', '$2b$10$8K1p/a0dL1LXMIgoEDFrwOfMQkf9Rn6bm1FZwOJK3v0pMl0IRLG2y', 'staff');
+('admin', '$2b$10$hamXQwiMY..p60BqdQcteeIxEq8RUuISL/kAeZEPfMtF3QO3K3ijG', 'admin'),
+('staff1', '$2b$10$GTjyzmcDz9HG3qqc.L3YqOwN7WQ3CXUaXQuA3wZSESAfgpukr0FZm', 'staff');
 
 -- Insert Vehicles
 INSERT INTO Vehicle (Plate_Number, Brand, Model, Year, Vehicle_Type, Purchase_Price, Status, RegisteredBy) VALUES

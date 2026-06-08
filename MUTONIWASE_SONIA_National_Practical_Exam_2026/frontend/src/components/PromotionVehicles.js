@@ -52,9 +52,11 @@ function PromotionVehicles() {
 
   return (
     <div>
-      <h3 className="mb-3">Promotion-Vehicle Links</h3>
+      <div className="page-header">
+        <h3>Promotion-Vehicle Links</h3>
+      </div>
       <div className="card">
-        <div className="card-header bg-primary text-white">Link Vehicle to Promotion</div>
+        <div className="card-header bg-white fw-bold border-bottom">Link Vehicle to Promotion</div>
         <div className="card-body">
           <form onSubmit={handleAdd} className="row g-2">
             <div className="col-md-4">

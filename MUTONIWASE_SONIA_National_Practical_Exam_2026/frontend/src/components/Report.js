@@ -23,7 +23,7 @@ function Report() {
         <button className="btn btn-success btn-sm" onClick={() => window.print()}>Print Report</button>
       </div>
       <div className="card">
-        <div className="card-header bg-primary text-white">All Customers & Applicable Promotions</div>
+        <div className="card-header bg-white fw-bold border-bottom">All Customers & Applicable Promotions</div>
         <div className="card-body">
           <div className="table-responsive">
             <table className="table table-hover table-bordered">

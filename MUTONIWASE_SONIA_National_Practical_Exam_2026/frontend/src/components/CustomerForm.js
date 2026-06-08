@@ -38,7 +38,7 @@ function CustomerForm() {
     <div className="row justify-content-center">
       <div className="col-md-6">
         <div className="card">
-          <div className="card-header bg-primary text-white">{isEdit ? 'Edit Customer' : 'Add Customer'}</div>
+          <div className="card-header bg-white fw-bold border-bottom">{isEdit ? 'Edit Customer' : 'Add Customer'}</div>
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <div className="row mb-3">
